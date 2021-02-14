@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistemas transaccionales</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+<div class="jumbotron text-center">
+    <h1 class="display-3">Medición de tiempos de ejecición</h1>
+    <p>Echo por: Emmanuel Hernández Ramírez</p>
+</div>
+    <div class="container">
+        <div class="row">
+            <!--insertTenThousandth-->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <h3>Carga de archivo sql</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>En esta sección se ejecuta la carga de 10,000 registros</p>
+                        <div class="align-content-center text-center">
+                            <button class="btn btn-primary" id="insertTenThousandth"> Iniciar proceso</button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="align-content-center text-center">
+                            <p id="insertTime">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- selectTenThousandth -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <h3>Consulta Select count(*)</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>En esta sección se ejecuta consulta select count(*) 10,000 veces</p>
+                        <div class="align-content-center text-center">
+                            <button class="btn btn-secondary" id="selectTenThousandth"> Iniciar proceso</button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="align-content-center text-center">
+                            <p id="selectTime">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- deleteTable -->
+            <div class="col-sm-12 col-md-6 col-lg-4 mb-2">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-body">
+                            <h3>Consulta truncate database</h3>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p>En esta sección se eliminan 10,000 registros</p>
+                        <div class="align-content-center text-center">
+                            <button class="btn btn-danger" id="deleteTable"> Iniciar proceso</button>
+                        </div>
+                    </div>
+                    <div class="card-footer">
+                        <div class="align-content-center text-center">
+                            <p id="deleteTime">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
