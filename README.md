@@ -17,3 +17,7 @@ CREATE TABLE IF NOT EXISTS `sda`.`ventas` (
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish2_ci;
+
+# Execution project
+`npm install` for install dependncies
+`npm start` for run application for dev
