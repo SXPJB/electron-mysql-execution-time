@@ -19,5 +19,5 @@ DEFAULT CHARACTER SET = utf8
 COLLATE = utf8_spanish2_ci;
 
 # Execution project
-`npm install` for install dependncies
+`npm install` for install dependencies 
 `npm start` for run application for dev
